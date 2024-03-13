@@ -2,47 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Project</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <title>Project Landing Page</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <h1>Welcome to My Portfolio Project</h1>
-        <p>This application is a culmination of my skills in web development, showcasing a full-stack project built with technologies like React, Node.js, and MongoDB.</p>
-        <a href="https://yourapp.com" target="_blank">Visit Live App</a> |
-        <a href="https://github.com/yourusername/yourproject" target="_blank">View on GitHub</a>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Project Name</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project-application" role="button">Project Application</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>Welcome to Our Project</h2>
+                    <h3>Empowering Innovations</h3>
+                </hgroup>
+                <p>Introducing our latest venture, a platform designed to revolutionize the way we interact with technology. Dive in to discover the possibilities.</p>
+                <figure>
+                    <img src="https://source.unsplash.com/featured/?innovation" alt="Cover image of innovation" />
+                    <figcaption><a href="https://example.com" target="_blank">Explore Project Application</a></figcaption>
+                </figure>
+            </section>
+        </div>
+    </main>
+    <section id="features" aria-label="Feature Section">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>Key Features</h2>
+                    <h3>Why Choose Our Platform</h3>
+                </hgroup>
+                <div class="grid">
+                    <section>
+                        <figure>
+                            <img src="https://source.unsplash.com/featured/?technology" alt="Feature 1" />
+                            <figcaption>Feature 1: Seamless Integration</figcaption>
+                        </figure>
+                        <p>Integrate with your existing systems flawlessly, enhancing efficiency and productivity.</p>
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="https://source.unsplash.com/featured/?innovation" alt="Feature 2" />
+                            <figcaption>Feature 2: Cutting-Edge Technology</figcaption>
+                        </figure>
+                        <p>Experience the latest in tech advancements, keeping you ahead of the competition.</p>
+                    </section>
+                    <section>
+                        <figure>
+                            <img src="https://source.unsplash.com/featured/?solution" alt="Feature 3" />
+                            <figcaption>Feature 3: Custom Solutions</figcaption>
+                        </figure>
+                        <p>Custom tailored solutions to meet your unique needs, ensuring optimal outcomes.</p>
+                    </section>
+                </div>
+            </article>
+        </div>
     </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I'm a passionate developer with a journey full of continuous learning and problem-solving. This project is a reflection of my dedication to creating meaningful web applications.</p>
+    <section id="about" aria-label="About Section">
+        <div class="container">
+            <article>
+                <hgroup>
+                    <h2>About the Project</h2>
+                    <h3>Inspiration Behind the Innovation</h3>
+                </hgroup>
+                <p>This project was born out of a passion for technology and a desire to create solutions that make a real difference. It represents months of hard work and dedication, and it is a Portfolio Project for Holberton School. The journey has been challenging but incredibly rewarding, offering us the opportunity to push our limits and expand our horizons.</p>
+                <p>Meet the team behind this project:</p>
+                <ul>
+                    <li><a href="https://linkedin.com" target="_blank">Team Member 1 - LinkedIn</a></li>
+                    <li><a href="https://github.com" target="_blank">Team Member 1 - GitHub</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Team Member 1 - Twitter</a></li>
+                    <li><a href="https://linkedin.com" target="_blank">Team Member 2 - LinkedIn</a></li>
+                    <li><a href="https://github.com" target="_blank">Team Member 2 - GitHub</a></li>
+                    <li><a href="https://twitter.com" target="_blank">Team Member 2 - Twitter</a></li>
+                </ul>
+                <p>Explore our <a href="https://github.com" target="_blank">GitHub repository</a> to learn more about the project.</p>
+            </article>
+        </div>
     </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <p>Explore the range of my projects from front-end designs to full-stack applications.</p>
-        <!-- Project cards go here -->
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you're interested in collaborating or hiring, let's get in touch!</p>
-        <!-- Contact form or information -->
-    </section>
-
-    <footer>
-        <p>&copy; 2024 My Portfolio Project. All rights reserved.</p>
-    </footer
-
+    <footer class="container">
+        <small>
+            <a href="https://example.com">Terms of Use</a> • <a href="https://example.com">Privacy Policy</a>
+        </small>
+    </footer>
+</body>
+</html>
